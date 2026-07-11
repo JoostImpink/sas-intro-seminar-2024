@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_compustat_missingcik",
+  "source_file": "2_compustat.sas",
+  "source_blob_sha": "84952c99f94332b6356ec7042fc54834f06add5",
+  "source_commit": "bafc94df6330b38eff985d5ee2f822b20a250e70",
+  "notes": "Compustat header-variable / missing-CIK investigation. comp.funda replaced with a 14-row inline DATA step matching its column shape; the market-cap computation, gvkey-cik cardinality check, missing-cik detection, and PROC MEANS-by-group are all the author's original logic. One step (median(mcap) mixed with non-aggregated columns in a single PROC SQL SELECT, i.e. SAS 'remerging') hits a confirmed Jenner bug (see set/ test) where the remerge detector doesn't recognize MEDIAN as an aggregate and DataFusion rejects the query under strict GROUP BY rules; rewrote that one step as the equivalent two-pass form (PROC MEANS CLASS to get the by-year median, then a left join) to preserve the analysis while shipping a passing bundle. Also fixed a typo in the original (line 63: 'create tabele' -> 'create table')."
+}

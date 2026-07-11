@@ -1,0 +1,25 @@
+                              getf_4: firm-years x matching ibes tickers (has duplicates)                               
+
+  Obs   gvkey    ncusip  fyear   datadate          key  ibes_ticker
+    1  001004  02376R10   2011  15MAR2011  001004_2011  AAL
+    2  001004  02376R10   2012  14MAR2012  001004_2012  AAL
+    3  001045  38259P50   2011  30JUN2011  001045_2011  GTC
+    4  002001  45086B10   2012  31DEC2012  002001_2012  MMF
+    5  003210  74005P10   2013  31JAN2013  003210_2013
+
+                                              duplicate keys before dedup                                               
+
+  Obs   gvkey    ncusip  fyear   datadate          key  ibes_ticker
+    1  001004  02376R10   2011  15MAR2011  001004_2011  AAL
+    2  001004  02376R10   2011  15MAR2011  001004_2011  AALQ
+    3  001004  02376R10   2012  14MAR2012  001004_2012  AAL
+    4  001004  02376R10   2012  14MAR2012  001004_2012  AALQ
+
+                                     getf_4 after proc sort nodupkey by gvkey fyear                                     
+
+  Obs   gvkey    ncusip  fyear   datadate          key  ibes_ticker
+    1  001004  02376R10   2011  15MAR2011  001004_2011  AAL
+    2  001004  02376R10   2012  14MAR2012  001004_2012  AAL
+    3  001045  38259P50   2011  30JUN2011  001045_2011  GTC
+    4  002001  45086B10   2012  31DEC2012  002001_2012  MMF
+    5  003210  74005P10   2013  31JAN2013  003210_2013

@@ -1,0 +1,74 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA getf_1
+
+NOTE: Processing inline DATALINES (8 lines)
+
+NOTE: Read 8 rows from DATALINES.
+NOTE: Wrote getf_1 (8 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA auditfees
+
+NOTE: Processing inline DATALINES (6 lines)
+
+NOTE: Read 6 rows from DATALINES.
+NOTE: Wrote auditfees (6 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table aa_fee created.
+NOTE: PROC SQL statement used.
+NOTE: DATA aa_fee_nonmiss
+
+
+NOTE: Read 9 rows from aa_fee.
+NOTE: Wrote aa_fee_nonmiss (6 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=aa_fee_nonmiss
+
+NOTE: Read 6 rows from aa_fee_nonmiss.
+NOTE: Wrote aa_fee_nonmiss (6 rows, 8 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=aa_fee
+
+NOTE: Read 9 rows from aa_fee.
+NOTE: Wrote aa_fee (9 rows, 8 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=aa_fee
+
+NOTE: 1 duplicate observations were deleted.
+NOTE: Read 9 rows from aa_fee.
+NOTE: Wrote aa_fee (8 rows, 8 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA nonmiss2
+
+
+NOTE: Read 8 rows from aa_fee.
+NOTE: Wrote nonmiss2 (5 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA aa_exchg
+
+
+NOTE: Read 8 rows from aa_fee.
+NOTE: Wrote aa_exchg (8 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table aa_exchg2 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=aa_fee_nonmiss
+
+NOTE: PROC PRINT completed: 6 observations printed, 8 variables
+NOTE: PROC PRINT data=aa_exchg2
+
+NOTE: PROC PRINT completed: 3 observations printed, 3 variables

@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-11T10:05:27Z",
+  "_captured_run_id": "r_c7356259cb564d91b0a98a2fd82d061e",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Table aa_fee created.",
+    "NOTE: Wrote aa_fee_nonmiss (6 rows, 8 columns).",
+    "NOTE: 1 duplicate observations were deleted.",
+    "NOTE: Table aa_exchg2 created."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

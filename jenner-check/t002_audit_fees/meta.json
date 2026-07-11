@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_audit_fees",
+  "source_file": "4_audit_analytics.sas",
+  "source_blob_sha": "6f3dd46fd1af2ffaf576a054130bc362c758c5c",
+  "source_commit": "bafc94df6330b38eff985d5ee2f822b20a250e70",
+  "notes": "Merges Compustat firm-years to Audit Analytics audit fees on cik/company_fkey within a +/-7-day fiscal-year-end window, then finds the unique firm-year with the highest fee and tabulates the missing-fee rate by exchange. audit.auditfees replaced with a small inline DATA step (6 rows, includes a firm with two competing auditor fee rows to exercise the PROC SORT DESCENDING + NODUPKEY highest-fee-wins logic). Script logic unchanged from source; ran clean end-to-end with no adaptation beyond the mock data."
+}

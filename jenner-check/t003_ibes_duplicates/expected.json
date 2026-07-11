@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-11T10:05:27Z",
+  "_captured_run_id": "r_55b43ab10ac7460cbf3b9991e90aee55",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Table getf_4 created.",
+    "NOTE: Table doubles created.",
+    "NOTE: 2 duplicate observations were deleted.",
+    "NOTE: Wrote getf_4nonmis (4 rows, 6 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-11T10:05:27Z",
+  "_captured_run_id": "r_a40d40a5ac9b4dae97b6ff1a85824e2d",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote getf_1 (14 rows, 10 columns).",
+    "NOTE: Wrote test4 (5 rows, 10 columns).",
+    "NOTE: Output dataset yearmed has 3 observations and 2 variables.",
+    "NOTE: Table test5 created."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
