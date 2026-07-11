@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_ibes_duplicates",
+  "source_file": "5_ibes.sas",
+  "source_blob_sha": "a99afd3d651e9ff3e1274da1f1d95a8dff26702",
+  "source_commit": "bafc94df6330b38eff985d5ee2f822b20a250e70",
+  "notes": "Matches firm-years to IBES tickers via historical cusip (ncusip = cusip and datadate > sdates), then investigates and drops the duplicate records that join produces (GROUP BY ... HAVING numObs > 1, then IN-subquery to pull the duplicate rows, then PROC SORT NODUPKEY to force uniqueness). getf_3 and ibes.idsum replaced with small inline DATA steps; mock data deliberately includes one cusip with two ibes.idsum candidates so the duplicate-detection path is genuinely exercised, not just the happy path. Script logic (including the gvkey||'_'||fyear key concatenation) unchanged from source."
+}

@@ -1,0 +1,63 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA comp_funda
+
+NOTE: Processing inline DATALINES (14 lines)
+
+NOTE: Read 14 rows from DATALINES.
+NOTE: Wrote comp_funda (14 rows, 15 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA getf_1
+
+
+NOTE: Read 14 rows from comp_funda.
+NOTE: Wrote getf_1 (14 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table test created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table test2 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table test3 created.
+NOTE: PROC SQL statement used.
+NOTE: DATA test4
+
+
+NOTE: Read 14 rows from getf_1.
+NOTE: Wrote test4 (5 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: Output dataset yearmed has 3 observations and 2 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC SQL 
+
+NOTE: Table test5 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SORT data=test5
+
+NOTE: Read 14 rows from test5.
+NOTE: Wrote test5 (14 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC MEANS
+NOTE: Output dataset test6 has 2 observations and 7 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC PRINT data=test3
+
+NOTE: PROC PRINT completed: 2 observations printed, 2 variables
+NOTE: PROC PRINT data=test4
+
+NOTE: PROC PRINT completed: 5 observations printed, 10 variables
+NOTE: PROC PRINT data=test6
+
+NOTE: PROC PRINT completed: 2 observations printed, 7 variables

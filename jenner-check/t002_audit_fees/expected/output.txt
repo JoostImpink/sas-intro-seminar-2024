@@ -1,0 +1,16 @@
+                                    firm-years matched with a non-missing audit fee                                     
+
+  Obs   gvkey  fyear   datadate      cik  exchg  audit_fees  fiscal_year  fee_AUDITOR_FKEY
+    1  001004   2001  15MAR2001   320193     11      850000         2001               501
+    2  001004   2002  14MAR2002   320193     11      875000         2002               501
+    3  001004   2002  14MAR2002   320193     11       50000         2002               502
+    4  001045   2001  30JUN2001  1234567     14      210000         2001               610
+    5  002001   2001  31DEC2001   850001     12      640000         2001               720
+    6  002001   2002  31DEC2002   850001     12      655000         2002               720
+
+                                           missing audit fee rate by exchange                                           
+
+  Obs  exchg  numfirms  perc_miss
+    1     14         2        0.5
+    2     12         2          0
+    3     11         4        0.5

@@ -1,0 +1,55 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA getf_3
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote getf_3 (5 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA idsum
+
+NOTE: Processing inline DATALINES (4 lines)
+
+NOTE: Read 4 rows from DATALINES.
+NOTE: Wrote idsum (4 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table getf_4 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table doubles created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table doubles2 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SORT data=getf_4
+
+NOTE: 2 duplicate observations were deleted.
+NOTE: Read 7 rows from getf_4.
+NOTE: Wrote getf_4 (5 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA getf_4nonmis
+
+
+NOTE: Read 5 rows from getf_4.
+NOTE: Wrote getf_4nonmis (4 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=getf_4
+
+NOTE: PROC PRINT completed: 5 observations printed, 6 variables
+NOTE: PROC PRINT data=doubles2
+
+NOTE: PROC PRINT completed: 4 observations printed, 6 variables
+NOTE: PROC PRINT data=getf_4
+
+NOTE: PROC PRINT completed: 5 observations printed, 6 variables
